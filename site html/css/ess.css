@@ -1,0 +1,172 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+nav{
+    width: 100%;
+    background-color: #424558;
+}
+
+nav > ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+nav > ul::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav > ul > li{
+    float: left;
+    position: relative;
+}
+
+nav > ul > li >a{
+    padding: 25px 30px;
+    color: #fff;
+}
+
+nav > ul >li:hover a{
+    padding: 20px 30px 25px 30px ;
+}
+
+nav li{
+    list-style-type: none;
+}
+
+.submenu{
+    display: none;
+}
+
+nav a{
+    display: inline-block;
+    text-decoration: none;
+}
+
+nav li:hover .submenu{
+    display: inline-block;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    padding: 0px;
+    z-index: 1000;
+}
+
+nav input[type=checkbox]{
+    display: none;
+}
+
+nav label{
+    display: none;
+}
+
+.submenu li{
+    border-bottom: 1px solid #ccc;
+}
+
+.submenu li a{
+    padding: 20px ;
+    margin: 30px;
+    font-size:45px;
+    color: #222538;
+    width: 270px;
+}
+
+.menu-ordinateur:hover{
+    border-top: 5px solid #e44d26;
+    background-color: rgba(228, 77, 38, 0.15);
+}
+
+.menu-contact:hover{
+    border-top: 5px solid #0070bb;
+    background-color: rgba(000, 112, 192, 0.15);
+}
+
+.menu-telephone:hover{
+    border-top: 5px solid #f1dc4f;
+    background-color: rgba(241, 211, 79, 0.15);
+}
+
+.menu-tablette:hover{
+    border-top: 5px solid rgb(255, 152, 17);
+    background-color: rgba(255, 152, 17, 0.15);
+}
+
+.menu-memoire:hover{
+    border-top: 5px solid rgb(73, 185, 58);
+    background-color: rgba(73, 185, 58, 0.15);
+}
+
+.menu-home:hover{
+    border-top: 5px solid rgb(149, 150, 151);
+    background-color: rgba(149, 150, 151, 0.15);
+}
+
+.submenu li:hover a{
+    color: #eee;
+    font-weight: bold;
+}
+
+nav input[type=checkbox]:checked ~ ul{
+    display: block;
+}
+
+@media screen and (max-width: 700px){
+    .menu-mobile{
+        display: block;
+        color: #FFF;
+        background-color: #424558;
+        text-align: center;
+        padding: 12px 0px;
+    }
+
+    .menu-mobile:hover{
+        background-color:rgba(29,197,151,0.97) ;
+    }
+
+    nav ul{
+        display: none;
+    }
+
+    nav ul li, nav ul li a{
+        width: 100%;
+        text-align: center;
+    }
+    nav ul li a, nav ul li:hover a{
+        padding: 10px 0px;
+    }
+    nav li:hover .submenu{
+        display: block;
+        position: static;
+    }
+}
+
+h1{
+    text-align: center;
+    font-size: 65px;
+    text-decoration: none;
+}
+
+h2{
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #6f717a;
+    font-family: Valentime;
+}
+
+@font-face{
+	font-family:Valentime;
+    src: url('../police/Valentime.otf')
+}
+
+li{
+    font-weight: bold;
+    background-color: rgba(26, 54, 180, 0.055);
+}
